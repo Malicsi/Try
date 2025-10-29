@@ -4,8 +4,8 @@ session_start();
 
 class LoginSystem {
     private $users = [
-        'admin' => 'password123',
-        'user' => 'userpass'
+        'admin' => '123456789',
+        'user' => 'Ralph'
     ];
 
     public function authenticate($username, $password) {
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
     
     if ($loginSystem->authenticate($username, $password)) {
-        header('Location: dashboard.php');
+        header('Location: Product.php');
         exit;
     } else {
         $error = "Invalid username or password";
