@@ -4,7 +4,7 @@ session_start();
 
 class LoginSystem {
     private $users = [
-        'admin' => '12345678',
+        'admin' => '123456789',
         'user' => 'Ralph'
     ];
 
