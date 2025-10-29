@@ -1,5 +1,5 @@
 <?php
-// Login.php - User authentication page
+
 session_start();
 
 class LoginSystem {
